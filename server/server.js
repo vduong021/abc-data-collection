@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(express.static(path.resolve(__dirname, './src/index.html')));
 
-app.use('/api', apiRouter)
+app.use('/index', apiRouter)
 
 // Default 404 handler
 app.use('*', (req, res) => {
