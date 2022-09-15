@@ -1,4 +1,4 @@
-const Instance = require('../models/models')
+const Instance = require('../models/models');
 
 const abcController = {
 // 

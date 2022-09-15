@@ -8,13 +8,18 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.use(express.static(path.resolve(__dirname, './src/index.html')));
+app.use(express.static(path.resolve(__dirname, '../src')));
+
+app.get('/', (req, res) => {
+  return res.status(200).sendFile(path.resolve(_dirname, '../src/index.html'))})
+
+
 
 app.use('/index', apiRouter)
 
 // Default 404 handler
 app.use('*', (req, res) => {
-    res.sendStatus(404)
+    res.status(404)
     .send(
       'Page not found'
     );
