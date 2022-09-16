@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import FormContainer from './FormContainer.jsx';
+// import LogDisplay from './LogDisplay.jsx';
 
 const MainContainer = () => {
   return (
-    <div className="mainContainer">
-      <h3>ABC Data Collection</h3>
-      <FormContainer />
-    </div>
+    <>
+      <div className="mainContainer">
+        
+        <FormContainer />
+      </div>
+    </>  
   )
 }
 

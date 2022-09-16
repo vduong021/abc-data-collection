@@ -1,7 +1,22 @@
-
+.displayLogs {
+  margin-top: 40px;
+  /* width: 60%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #E56B6F;
+  border-radius: 10px;
+}
+.logBoxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #6D597A;
+  overflow: auto;
+}
 .mainContainer {
   display: flex;
-  background-color: #EAAC8B;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -16,13 +31,80 @@ body {
 }
 
 .formContainer {
+  margin-top: 30px;
+  background-color: #EAAC8B;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 7px 7px rgba(212, 212, 228, 0.3);
+  border-radius: 10px;
 }
 
 .formContainer div {
   padding: 10px;
+}
+.formContainer button {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+  font-size: 15px;
+  font-weight: 600;
+  color: #355070;
+  background-color:#fffeff;
+  border-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+}
+.formContainer button:hover {
+  cursor: pointer;
+}
+.formContainer input {
+  border-radius: 10px;
+  border-style: solid;
+  border-style: none;
+  padding-left: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.long {
+  overflow: auto;
+  width: 430px;
+  height: 20px;
+}
+.log {
+  padding: 7px;
+    width: 35%;
+    margin: 5px 5px 13px 10px;
+    font-size: .85em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+}
+
+.log span {
+  font-weight: 600;
+}
+
+.logContainer{
+  display: flex;
+  justify-content: space-evenly;
+}
+.delete {
+  margin-top: 3px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  color: #fffeff;
+  background-color: #355070;
+  border-style: none;
+  border-radius: 5px;
+  padding: 7px;
+}
+.shopName {
+  align-items: flex-start;
+}
+button:hover {
+ opacity: 90%;
+ cursor: pointer;
 }

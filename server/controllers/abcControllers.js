@@ -1,7 +1,21 @@
 const Instance = require('../models/models');
 
 const abcController = {
-// 
+// get all client logs
+  getAllClient(req, res, next) {
+    Instance.find({})
+    .then(data => {
+      res.locals.getAll = data;
+      console.log('this is from controller')
+      return next();
+    })
+    .catch(err => {
+      next({
+        log: `error in getAllClient: ERROR: ${err}`,
+        message: { err: 'Express error handler caught in getAllClient' }
+      });
+    });
+  }, 
   //get info from database
   getClient(req, res, next) {
     const client = req.params.client;

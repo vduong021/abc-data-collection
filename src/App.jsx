@@ -11,9 +11,6 @@ class App extends Component {
     console.log('im in the app')
     return (
     <div className="appDiv">
-      <div>
-        <h1>ABC Data Collection</h1>
-      </div>
   
       <MainContainer />
     </div>
